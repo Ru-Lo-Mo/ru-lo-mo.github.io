@@ -1,0 +1,10 @@
+/* styles/globals.css */
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+::selection {
+  background: #ffffff;
+  color: #000;
+}
