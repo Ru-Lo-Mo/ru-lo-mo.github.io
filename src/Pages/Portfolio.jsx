@@ -1,4 +1,4 @@
-import WIP from "./Components/Cards/WIP"
+import WIP from "../Components/Cards/WIP"
 
 function Portfolio() {
 
