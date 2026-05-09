@@ -1,10 +1,10 @@
-import Model from "../Components/Model/Model"
+import WIP from "../Components/Cards/WIP"
 
 function TBS() {
 
   return (
     <div className="TBS">
-      <Model />
+      <WIP />
       
 
     </div>
