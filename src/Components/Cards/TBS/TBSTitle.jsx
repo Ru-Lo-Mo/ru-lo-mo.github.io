@@ -4,8 +4,8 @@ export default function TBSTitle() {
       <p className="mt-2 md:text-9xl text-4xl text-[#9c606d] font-title">
         THE BITTER SHOT
       </p>
-      <p className="mt-2 md:text-4xl text-sm text-[#9c606d] font-title">
-        Made by Akarryon
+      <p className="mt-2 md:text-4xl text-sm text-[#9c606d] font-title md:pt-56">
+        Akarryon
       </p>
     </section>
   );

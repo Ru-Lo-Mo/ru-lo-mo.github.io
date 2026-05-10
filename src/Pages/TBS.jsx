@@ -29,21 +29,21 @@ function TBS() {
 
   const text_container = "py-6 md:p-6 flex flex-col justify-center";
   const h_text = "text-[var(--light-color)] font-semibold text-lg md:text-5xl";
-  const body_text = "mt-2 text-[var(--light-color)] font-semibold text-xs md:text-2xl";
+  const body_text = "mt-2 text-[var(--light-color)] font-semibold text-xs md:text-2xl py-2 md:py-6";
 
   return (
     <div className={"bg-[var(--dark-ak-color)] flex justify-center p-6 scroll-container overflow-y-auto"}>
 
         <section className="w-full max-w-[1800px] md:flex md:flex-col gap-12">
 
-            <div className="max-h-[1800px] flex items-center justify-between md:gap-12">
+            <div className="max-h-[1800px] md:max-h-[2000px] flex items-center justify-between md:gap-4 py-10">
 
               <div className="w-1/5 z-10 tracking-wide md:pl-20">
                 <TBSTitle/>
               </div>
               
               <img 
-              className="h-4/5 object-cover overflow-hidden" 
+              className="h-4/5 md:h-full object-cover overflow-hidden" 
               src="bannerTBS_16x9.png" 
               alt="The Bitter Shot"
               />
@@ -51,12 +51,28 @@ function TBS() {
             </div>
 
             <div className={div_image_desc_layout}>
+{/* 
+              <a
+              href="https://youtu.be/ypRZzOLb71U"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+                <img
+                className={`${div_image_layout} order-1 md:order-1`}
+                src="game_screenshot.png" 
+                alt="Game Screenshot"
+                />
+              </a> */}
 
-              <img 
-              className={`${div_image_layout} order-1 md:order-1`}
-              src="TBS_icon.png" 
-              alt="The Bitter Shot"
-              />
+
+              <div className="aspect-video w-full">
+                <iframe
+                  className="w-full h-full rounded-xl"
+                  src="https://www.youtube.com/embed/ypRZzOLb71U?si=D1xeOk6RKUrHPQZR"
+                  title="TBS Portfolio Demo"
+                  allowFullScreen
+                />
+              </div>
 
               <div className={`${div_desc_layout} order-2 md:order-2`}>
                 <TBSAbout text_container={text_container} h_text={h_text} body_text={body_text}/>
@@ -82,7 +98,7 @@ function TBS() {
 
               <img 
               className={`${div_image_layout} order-1 md:order-1`}
-              src="TBS_icon.png" 
+              src="progress.png" 
               alt="The Bitter Shot"
               />
 
@@ -96,7 +112,7 @@ function TBS() {
 
               <img 
               className={`${div_image_layout} order-1 md:order-2`}
-              src="TBS_icon.png" 
+              src="menu.png" 
               alt="The Bitter Shot"
               />
 
