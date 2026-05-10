@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --light-color: #bba4a2;
@@ -8,33 +11,30 @@
   --dark-normal-color: #04020f;
   --dark-ak-color: #0f0105;
 }
-::-webkit-scrollbar {
-  width: 0px;
+
+html {
+  background: var(--dark-ak-color);
 }
 
-::-webkit-scrollbar-track {
-  background: transparent;
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
 }
 
-::-webkit-scrollbar-thumb {
+.scroll-container::-webkit-scrollbar-track {
+  background: inherit; /* key idea */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
   background: var(--light-color);
   border-radius: 999px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+html::-webkit-scrollbar-thumb:hover {
   background: var(--light-hover-color);
 }
 
-::-webkit-scrollbar-button {
-  display: none;
-}
-
 /* Firefox */
-* {
+html {
   scrollbar-width: thin;
   scrollbar-color: var(--light-color) transparent;
-}
-
-:hover::-webkit-scrollbar {
-  width: 8px;
 }

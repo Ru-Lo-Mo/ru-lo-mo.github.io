@@ -1,7 +1,6 @@
-import PFTitle from "../Components/Cards/PFTitle"
-import PFTitle2 from "../Components/Cards/PFTitle2"
-import Contact from "../Components/Cards/Contact"
-import PFTBS from "../Components/Cards/PFTBS"
+import PFTitle from "../Components/Cards/PF/PFTitle"
+import PFTitle2 from "../Components/Cards/PF/PFTitle2"
+import PFTBS from "../Components/Cards/PF/PFTBS"
 import { useState } from "react";
 
 function Portfolio() {
@@ -14,7 +13,7 @@ function Portfolio() {
     : "bg-[var(--dark-normal-color)]";
 
   return (
-    <div className={`h-screen transition-colors ${bg}  p-6`}>
+    <div className={`h-screen transition-colors ${bg} p-6`}>
 
       <div className="h-full overflow-hidden rounded-lg border-2 border-[var(--light-color)] flex">
 
