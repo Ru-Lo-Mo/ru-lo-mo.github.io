@@ -1,6 +1,6 @@
 export default function PFTBS({setIsAkarryon}) {
   return (
-    <div className="h-screen flex items-center justify-center flex-col max-h-full max-w-full p-6">
+    <div className="flex items-center justify-center flex-col max-h-full max-w-full p-6">
 
       <a 
       className="flex-1 items-center justify-center overflow-hidden" 
