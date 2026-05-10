@@ -15,7 +15,7 @@ function Portfolio() {
   return (
     <div className={`h-screen transition-colors ${bg} p-6`}>
 
-      <div className="h-full overflow-hidden rounded-lg border-2 border-[var(--light-color)] flex flex-col md:flex-row">
+      <div className="h-full rounded-lg border-2 border-[var(--light-color)] flex flex-col md:flex-row">
 
 
         <aside className="h:1/5 md:w-1/5 flex items-center justify-center flex-col border-b-2 md:border-r-2 border-[var(--light-color)]">
@@ -24,7 +24,7 @@ function Portfolio() {
             </div>
         </aside>
 
-        <section className="flex-1 flex-col items-center justify-center overflow-y-auto md:p-6 space-y-4">
+        <section className="max-h-sm md:max-h-screen md:w-full flex flex-col items-center justify-center scroll-container overflow-y-auto md:p-6">
           <PFTBS setIsAkarryon={setIsAkarryon}/>
         </section>
 
